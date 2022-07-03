@@ -14,3 +14,9 @@ let words = ["Beep!", "Boop!", "Won't you be my neighbor?"];
 // 2 "Won't you be my neighbor?" will be used if we have 3 in number from inpuArray (1 and 2 does't effect the result)
 // if inputArray has
 //
+let finalArray = [];
+inputArray.forEach(function (element) {
+  if (element.includes("3")) {
+    element.replace
+  }
+})
