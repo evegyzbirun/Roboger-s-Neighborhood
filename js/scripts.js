@@ -5,3 +5,7 @@ function generateArray(input) {
   }
   return inputArray;
 }
+
+let newArray = []
+newArray.push(inputArray[index].toString());
+
