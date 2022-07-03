@@ -17,6 +17,7 @@ let words = ["Beep!", "Boop!", "Won't you be my neighbor?"];
 
 let finalArray = [];
 inputArray.forEach(function (element) {
+
   if (element.includes(3)) {
     inputArray[index] = "Won't you be my neighbor?"
     // or I need to find how to replace on words[2] "Won't you be my neighbor?"
@@ -29,3 +30,4 @@ inputArray.forEach(function (element) {
   }
   return inputArray;
 });
+
