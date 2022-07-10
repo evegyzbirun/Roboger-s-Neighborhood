@@ -4,31 +4,52 @@
 // 2 "Won't you be my neighbor?" will be used if we have 3 in number from inpuArray (1 and 2 does't effect the result)
 // if inputArray has
 //
-let inputArray = [];
+
 function generateArray(input) {
+  let inputArray = [];
 
   for (let index = 0; index <= input; index += 1) {
     inputArray.push(index);
+
   }
+  let newArray = inputArray.toString();
+  return newArray;
+
+}
+
+//once you return you will have something like this [1,2,3,4]
+
+//another helper function here youFunct(array) that will loop through and 
 
 
 
-  //let words = ["Beep!", "Boop!", "Won't you be my neighbor?"];
-
-  //let finalArray = [];
-  inputArray.forEach(function (element) {
-
-    if (element.(3)) {
-      inputArray[element] = "Won't you be my neighbor?"
-      // or I need to find how to replace on words[2] "Won't you be my neighbor?"
-    } else if (element.(2)) {
-      inputArray[element] = "Boop!"
-    } else if (element.(1)) {
-      inputArray[element] = "Beep!"
+function outPut() {
+  newArray.forEach(function (element) {
+    let finalArray = [];
+    if (element.includes("3")) {
+      string.replace("Won't you be my neighbor?");
+      finalArray.push(element);
+    } else if (element.includes("2")) {
+      string.replace("Boop!");
+      finalArray.push(element);
+    } else if (element.includes("1")) {
+      string.replace("Beep!");
+      finalArray.push(element);
     } else {
-
+      finalArray.push(element);
     }
-    return inputArray;
+    return finalArray; //this will look like [0, beep, boop, wybmn, 4,5,6....]
   });
 }
 
+window.addEventListener("load", function () {
+  document.getElementById("replace").addEventListener("submit", generateArray);
+  document.getElementById("output").addEventListener("click", outPut)
+})
+//ui logic
+
+// when you do your page load and submit
+//get value from form input= input.value
+// let inputArray = generateArray(input);
+//let finalarray= yourfunction(inputArray);
+// post and clear results to DOM

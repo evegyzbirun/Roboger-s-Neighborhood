@@ -49,6 +49,10 @@ Expected Output: [0, 1, 2, 3, 4, 5, 6, ... , 100]
 
 Describe: inputArray.forEach(function (element){})
 
+
+//Test: if a number includes a 1 it should retun beep
+
+// test if an number includes a 1 and a 2 it should return whatever
 Test: "It should return an array of numbers and some of them replaced with words from let words = ["Beep!", "Boop!", "Won't you be my neighbor?"];"
 Code: return inputArray;
 Expected Output:[0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5]
