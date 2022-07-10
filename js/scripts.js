@@ -17,13 +17,13 @@ function outPut() {
 
     if (element.includes("3")) {
 
-      finalArray.push("Won't you be my neighbor?");
+      finalArray.push('"Won\'t you be my neighbor?"');
     } else if (element.includes("2")) {
 
-      finalArray.push("Boop!");
+      finalArray.push('"Boop!"');
     } else if (element.includes("1")) {
 
-      finalArray.push("Beep!");
+      finalArray.push('"Beep!"');
     } else {
       finalArray.push(element);
     }
