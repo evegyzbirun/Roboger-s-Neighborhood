@@ -12,7 +12,8 @@ function generateArray(input) {
     inputArray.push(index);
 
   }
-  let newArray = inputArray.toString();
+  let newArray = inputArray.toString().split(',');
+  outPut(newArray);
   return newArray;
 
 }
@@ -24,8 +25,9 @@ function generateArray(input) {
 
 
 function outPut() {
+  let finalArray = [];
   newArray.forEach(function (element) {
-    let finalArray = [];
+
     if (element.includes("3")) {
       string.replace("Won't you be my neighbor?");
       finalArray.push(element);
@@ -38,16 +40,24 @@ function outPut() {
     } else {
       finalArray.push(element);
     }
-    return finalArray; //this will look like [0, beep, boop, wybmn, 4,5,6....]
+    //this will look like [0, beep, boop, wybmn, 4,5,6....]
   });
+  return finalArray;
+}
+
+
+//ui logic
+function twoInOne() {
+  event.preventDefault();
+  const inputNumber = document.getElementById("userNumber").value;
+  const arrayFromNumber = generateArray(inputNumber);
+
 }
 
 window.addEventListener("load", function () {
-  document.getElementById("replace").addEventListener("submit", generateArray);
-  document.getElementById("output").addEventListener("click", outPut)
-})
-//ui logic
+  document.getElementById("replace").addEventListener("submit", twoInOne);
 
+})
 // when you do your page load and submit
 //get value from form input= input.value
 // let inputArray = generateArray(input);
