@@ -13,7 +13,7 @@ function generateArray(input) {
 
   }
   let newArray = inputArray.toString().split(',');
-  outPut(newArray);
+  //outPut(newArray);
   return newArray;
 
 }
@@ -24,26 +24,26 @@ function generateArray(input) {
 
 
 
-function outPut() {
-  let finalArray = [];
-  newArray.forEach(function (element) {
+// function outPut() {
+//   let finalArray = [];
+//   newArray.forEach(function (element) {
 
-    if (element.includes("3")) {
-      string.replace("Won't you be my neighbor?");
-      finalArray.push(element);
-    } else if (element.includes("2")) {
-      string.replace("Boop!");
-      finalArray.push(element);
-    } else if (element.includes("1")) {
-      string.replace("Beep!");
-      finalArray.push(element);
-    } else {
-      finalArray.push(element);
-    }
-    //this will look like [0, beep, boop, wybmn, 4,5,6....]
-  });
-  return finalArray;
-}
+//     if (element.includes("3")) {
+//       string.replace("Won't you be my neighbor?");
+//       finalArray.push(element);
+//     } else if (element.includes("2")) {
+//       string.replace("Boop!");
+//       finalArray.push(element);
+//     } else if (element.includes("1")) {
+//       string.replace("Beep!");
+//       finalArray.push(element);
+//     } else {
+//       finalArray.push(element);
+//     }
+//     //this will look like [0, beep, boop, wybmn, 4,5,6....]
+//   });
+//   return finalArray;
+// }
 
 
 //ui logic
@@ -51,7 +51,7 @@ function twoInOne() {
   event.preventDefault();
   const inputNumber = document.getElementById("userNumber").value;
   const arrayFromNumber = generateArray(inputNumber);
-
+  document.querySelector("div#output").append(arrayFromNumber);
 }
 
 window.addEventListener("load", function () {
